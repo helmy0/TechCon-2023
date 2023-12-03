@@ -1,0 +1,192 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  <title>Conference Schedule</title>
+</head>
+
+
+<body>
+
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #071B2A;">
+    <a style="padding-left: 3%" class="navbar-brand" href="index.html">TechCon 2023</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="speakers.html">Speakers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<div id="sch-main-container" class="container">
+  <div class="container">
+    <h1>Schedule</h1>
+    <div class="filter mb-3">
+      <span>Filter by day:</span>
+      <select id="dayFilter">
+        <option value="all">All</option>
+        <option value="day1">Day 1</option>
+        <option value="day2">Day 2</option>
+        <option value="day3">Day 3</option>
+      </select>
+    </div>
+
+  <div class="table-responsive">
+
+  <table id="schedule">
+      <thead>
+      <tr>
+        <th>Time</th>
+        <th>Title</th>
+        <th>Speaker</th>
+      </tr>
+      </thead>
+        <tbody>
+      <!-- In the code below each row containing details for each time slot with an ID referencing the corresponding day of the event-->
+
+
+          <!-- Day 1 -->
+          <tr data-day="day1">
+            <td>Day 1</td>
+          </tr>
+          <tr data-day="day1">
+            <td>9:00 AM - 10:30 AM</td>
+            <td>Keynote: The Future of Artificial Intelligence</td>
+            <td>Elon Musk</td>
+          </tr>
+          <tr data-day="day1">
+            <td>11:00 AM - 12:30 PM</td>
+            <td>Panel Discussion: AI in Healthcare</td>
+            <td>Mark Zuckerberg</td>
+          </tr>
+          <tr data-day="day1">
+            <td>2:00 PM - 3:30 PM</td>
+            <td>Workshop: Building Intelligent Chatbots</td>
+            <td>Elon Musk</td>
+          </tr>
+          <tr data-day="day1">
+            <td>4:00 PM - 5:30 PM</td>
+            <td>AI Ethics: Challenges and Opportunities</td>
+            <td>Satya Nadella</td>
+          </tr>
+
+          <tr data-day="day2">
+            <td>Day 2</td>
+          </tr>
+
+          <!-- Day 2 -->
+          <tr data-day="day2">
+            <td>9:00 AM - 10:30 AM</td>
+            <td>Keynote: Advancements in Cloud Computing</td>
+            <td>Mr. Sergio Gianotti</td>
+          </tr>
+          <tr data-day="day2">
+            <td>11:00 AM - 12:30 PM</td>
+            <td>Panel Discussion: The Future of Edge Computing</td>
+            <td>Mark Zuckerberg</td>
+          </tr>
+          <tr data-day="day2">
+            <td>2:00 PM - 3:30 PM</td>
+            <td>Workshop: Migrating to the Cloud</td>
+            <td>Jeff Bezos</td>
+          </tr>
+          <tr data-day="day2">
+            <td>4:00 PM - 5:30 PM</td>
+            <td>Security in Cloud Environments</td>
+            <td>Satya Nadella</td>
+          </tr>
+          <tr data-day="day3">
+            <td>Day 3</td>
+          </tr>
+
+            <!-- Day 3 -->
+
+          <tr data-day="day3">
+            <td>9:00 AM - 10:30 AM</td>
+            <td>Keynote: The Role of Quantum Computing in the Future</td>
+            <td>Satya Nadella</td>
+          </tr>
+          <tr data-day="day3">
+            <td>11:00 AM - 12:30 PM</td>
+            <td>Panel Discussion: Blockchain and Decentralized Technologies</td>
+            <td>Richard Branson</td>
+          </tr>
+          <tr data-day="day3">
+            <td>2:00 PM - 3:30 PM</td>
+            <td>Workshop: Implementing DevOps in a Modern IT Environment</td>
+            <td>Elon Musk</td>
+          </tr>
+          <tr data-day="day3">
+            <td>4:00 PM - 5:30 PM</td>
+            <td>Cybersecurity Trends: Challenges and Solutions</td>
+            <td>Jeff Bezos</td>
+          </tr>
+
+        </tbody>
+    </table>
+  </div>
+  </div>
+</div>
+
+
+
+
+</body>
+
+
+
+<!-- Javascript code to filter the schedule based on the day selected in the dropdown menu -->
+
+
+<script>
+
+</script>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="text-center">
+            <p>&copy;  TechCon 2023. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+</html>
